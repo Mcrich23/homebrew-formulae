@@ -1,5 +1,5 @@
-// container-compose.rb
-class Container-Compose < Formula
+# container-compose.rb
+class ContainerCompose < Formula
   desc "Manage Apple Container with Docker Compose files."
   homepage "https://github.com/Mcrich23/container-compose"
   url "https://github.com/Mcrich23/container-compose.git", tag: "0.1.0"
