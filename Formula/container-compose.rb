@@ -1,9 +1,9 @@
 class ContainerCompose < Formula
   desc "Manage Apple Container with Docker Compose files."
   homepage "https://github.com/Mcrich23/container-compose"
-  url "https://github.com/Mcrich23/container-compose/releases/download/0.2.2/container-compose-macos-arm64"
-  sha256 "51c487b0060fda03e579a78132e509410f272abd215c716ff036ac29c6718f19"
-  version "0.2.2"
+  url "https://github.com/Mcrich23/container-compose/releases/download/0.4.1/container-compose-macos-arm64"
+  sha256 "4f5bcd3332c256a1c2a4c60e5f3c2fe6fb7cdbc48927eef6e21e0bffd37ba3dd"
+  version "0.4.1"
 
   def install
     bin.install "container-compose-macos-arm64" => "container-compose"
