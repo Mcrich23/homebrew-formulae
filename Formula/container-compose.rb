@@ -6,11 +6,16 @@ class ContainerCompose < Formula
   url "https://github.com/Mcrich23/container-compose/releases/download/0.4.1/container-compose-macos-arm64"
   sha256 "4f5bcd3332c256a1c2a4c60e5f3c2fe6fb7cdbc48927eef6e21e0bffd37ba3dd"
 
-  # License can be found in the repository
+  # License is MIT
   license "MIT"
 
   # If you want a head option:
   head "https://github.com/mcrich23/container-compose.git", branch: "main"
+
+  livecheck do
+    url :stable
+    regex(/^v?(\d+(?:\.\d+)+)$/i)
+  end
 
   # This is macOS-only
   depends_on :macos
@@ -23,10 +28,5 @@ class ContainerCompose < Formula
   test do
     # Test something minimal; using --help is common
     assert_match "container-compose", shell_output("#{bin}/container-compose --help")
-  end
-
-  livecheck do
-    url :stable
-    regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 end
