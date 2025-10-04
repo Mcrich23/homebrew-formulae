@@ -26,7 +26,7 @@ class ContainerCompose < Formula
   end
 
   test do
-    # Test something minimal; using --help is common
-    assert_match "container-compose", shell_output("#{bin}/container-compose --help")
+    output = shell_output("#{bin}/container-compose down 2>&1", 1)
+    assert_match "compose.yml not found at #{testpath}", output
   end
 end
