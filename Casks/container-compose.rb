@@ -7,10 +7,10 @@ cask "container-compose" do
   desc "Manage Apple Container with Docker Compose files"
   homepage "https://github.com/mcrich23/container-compose"
 
-  # Install the binary into /usr/local/bin (or /opt/homebrew/bin on ARM Macs)
-  binary "container-compose", target: "container-compose"
+  pkg "container-compose.pkg"
 
-  # Livecheck block for version updates
+  uninstall pkgutil: "com.mcrich23.container-compose"
+
   livecheck do
     url :url
     strategy :github_latest
