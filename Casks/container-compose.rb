@@ -9,7 +9,7 @@ cask "container-compose" do
 
   pkg "container-compose.pkg"
 
-  uninstall pkgutil: "com.mcrich23.container-compose"
+  uninstall pkgutil: "com.mcrich.pkg.container-compose"
 
   livecheck do
     url :url
