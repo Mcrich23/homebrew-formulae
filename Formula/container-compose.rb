@@ -2,6 +2,10 @@ class ContainerCompose < Formula
   desc "Manage Apple Container with Docker Compose files"
   homepage "https://github.com/mcrich23/container-compose"
 
+  # Use the universal (multi-arch) binary
+  url "https://github.com/Mcrich23/container-compose/releases/download/0.6.0/container-compose"
+  sha256 "2902a747fe1205adbb1bc36ab58788291cf47082deb978cf6e1343c7daf2d7a7"
+
   # License is MIT
   license "MIT"
 
