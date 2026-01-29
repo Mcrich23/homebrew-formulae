@@ -3,8 +3,8 @@ class ContainerCompose < Formula
   homepage "https://github.com/mcrich23/container-compose"
 
   # Use the universal (multi-arch) binary
-  url "https://github.com/Mcrich23/container-compose/releases/download/0.7.0/container-compose"
-  sha256 "e4ee2e46235ed57896c9fca9064d404e5f7079c365abaa851fbfbb58636af091"
+  url "https://github.com/Mcrich23/container-compose/releases/download/0.8.0/container-compose"
+  sha256 "39cb87ed7e24ff7a99d72f47c2df3cb4f5012d110026fe94146fb070827feb84"
 
   # License is MIT
   license "MIT"
