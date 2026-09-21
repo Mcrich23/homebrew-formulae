@@ -2,9 +2,8 @@ class ContainerCompose < Formula
   desc "Manage Apple Container with Docker Compose files"
   homepage "https://github.com/mcrich23/container-compose"
 
-  # Use the universal (multi-arch) binary
-  url "https://github.com/Mcrich23/container-compose/releases/download/1.0.0/container-compose"
-  sha256 "40ccef90e3fe69d71fbac7fc50afa912b87f4d734971f767e207fb9b6776c469"
+  url "https://github.com/Mcrich23/container-compose/releases/download/1.2.0/container-compose"
+  sha256 "021a680b4f7c7c30455af268c5d413786ac490bb1f7ce6626d05c06d7bd9f031"
 
   # License is MIT
   license "MIT"
@@ -18,10 +17,11 @@ class ContainerCompose < Formula
   end
 
   # This is macOS-only
-  depends_on :macos
+  depends_on arch: :arm64
+  depends_on macos: :sequoia
 
   def install
-    # The binary is universal, so same binary works for both architectures
+
     bin.install "container-compose" => "container-compose"
   end
 
